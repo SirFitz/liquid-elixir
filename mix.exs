@@ -3,14 +3,14 @@ defmodule Liquid.Mixfile do
 
   def project do
     [
-      app: :liquid,
+      app: :liquid_elixir,
       version: "0.9.1",
       elixir: "~> 1.5",
       deps: deps(),
       name: "Liquid",
       description: description(),
       package: package(),
-      source_url: "https://github.com/bettyblocks/liquid-elixir",
+      source_url: "https://github.com/SirFitz/liquid-elixir",
       test_coverage: [tool: ExCoveralls],
       preferred_cli_env: [
         coveralls: :test,
@@ -49,9 +49,9 @@ defmodule Liquid.Mixfile do
   defp package do
     [
       files: ["lib", "README*", "mix.exs"],
-      maintainers: ["Peter Arentsen"],
+      maintainers: ["Romario Fitzgerald"],
       licenses: ["MIT"],
-      links: %{"GitHub" => "https://github.com/nulian/liquid-elixir"}
+      links: %{"GitHub" => "https://github.com/SirFitz/liquid-elixir"}
     ]
   end
 end
